@@ -7,6 +7,6 @@ WORKDIR /root/hackingtool
 COPY requirements.txt ./
 RUN pip3 install --no-cache-dir boxes flask lolcat requests -r requirements.txt
 COPY . .
-RUN true && echo "/root/hackingtoll/" > /home/hackingtoolpath.txt;
+RUN true && echo "/root/hackingtool/" > /home/hackingtoolpath.txt;
 EXPOSE 1-65535
 ENTRYPOINT ["python3", "/root/hackingtool/hackingtool.py"]
